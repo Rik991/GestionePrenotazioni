@@ -1,9 +1,7 @@
 package it.epicode.GestionePrenotazioni.postazione;
 
 import com.github.javafaker.Faker;
-import it.epicode.GestionePrenotazioni.edificio.Edificio;
 
-import it.epicode.GestionePrenotazioni.edificio.EdificioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

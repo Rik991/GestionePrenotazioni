@@ -117,8 +117,12 @@ public class PrenotazioneRunner implements ApplicationRunner {
                     }
                     break;
                 case 3:
-                    System.out.println("Ecco le tue prenotazioni in dettaglio");
                     List<Prenotazione> prenotazioniUtentecorrente = prenotazioneRepo.findByUtenteId(sceltaUtente);
+                    if (prenotazioniUtentecorrente.isEmpty()) {
+                        System.out.println("Non hai prenotazioni attive");
+                        break;
+                    }
+                    System.out.println("Ecco le tue prenotazioni in dettaglio");
                     for (Prenotazione prenotazione : prenotazioniUtentecorrente) {
                         System.out.println(prenotazione);
                     }

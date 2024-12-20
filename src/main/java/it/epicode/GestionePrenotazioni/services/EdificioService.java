@@ -1,4 +1,4 @@
-// EdificioService.java
+
 package it.epicode.GestionePrenotazioni.services;
 
 import it.epicode.GestionePrenotazioni.edificio.Edificio;
