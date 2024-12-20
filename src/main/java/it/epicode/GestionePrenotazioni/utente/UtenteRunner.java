@@ -4,11 +4,13 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 
 @RequiredArgsConstructor
 @Component
+@Order(1)
 public class UtenteRunner implements ApplicationRunner {
 
     private final UtenteRepository utenteRepo;

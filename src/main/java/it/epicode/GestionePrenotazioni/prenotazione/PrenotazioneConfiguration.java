@@ -12,9 +12,7 @@ import java.time.LocalDate;
 
 @Configuration
 @RequiredArgsConstructor
-@Order(10)
 public class PrenotazioneConfiguration {
-
     private final PrenotazioneRepository prenotazioneRepository;
     private final UtenteRepository utenteRepository;
     private final PostazioneRepository postazioneRepository;

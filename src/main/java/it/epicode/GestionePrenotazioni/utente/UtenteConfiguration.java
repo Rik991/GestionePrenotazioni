@@ -9,7 +9,6 @@ import org.springframework.core.annotation.Order;
 
 @RequiredArgsConstructor
 @Configuration
-@Order(1)
 public class UtenteConfiguration {
 
     private final Faker faker;

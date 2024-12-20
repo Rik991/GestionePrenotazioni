@@ -9,6 +9,7 @@ import it.epicode.GestionePrenotazioni.utente.UtenteRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
@@ -18,6 +19,7 @@ import java.util.Scanner;
 
 @RequiredArgsConstructor
 @Component
+@Order(10)
 public class PrenotazioneRunner implements ApplicationRunner {
 
     private final UtenteRepository utenteRepo;
